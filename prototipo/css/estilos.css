@@ -1,0 +1,200 @@
+#skip-to-content a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip-to-content a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+
+.titulos-primarios{
+    border-bottom: 1px solid #0072b5;
+    padding: 15px;
+    color: #0072b5;
+    font-size: 2.6em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.titulos-secundarios {
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+footer .subtitulos {
+    font-size: 1.5em;
+    color: #0072b5;
+}
+
+.titulos-index{
+    text-align: center;
+    color: #0072b5;
+    font-size: 2.6em;
+    margin-bottom: 50px;
+}
+
+.info {
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.bg-dark-blue{
+    background-color: #001d58;
+}
+
+.banner-nosotros {
+    background:url(../img/braille.jpg) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.banner-donaciones{
+    background:url(../img/donaciones.png) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.banner-actividades{
+    background:url(../img/banner-actividades.jpg) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.banner-miembros{
+    background:url(../img/banner-miembros.jpg) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.banner-noticias{
+    background:url(../img/banner-noticias.jpg) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.banner-contacto{
+    background:url(../img/banner-contacto.jpg) no-repeat center;
+    background-attachment:fixed;
+	height:350px;
+    width: 100%;
+	position:relative;
+    margin: 0;
+}
+
+.container {
+    padding: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+p {
+    padding: 15px;
+    hyphens: auto;
+}
+.skip-to-content-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+    color:  #ffffff;
+    font-size: 12.0pt ;
+  }
+img.img-nosotros {
+    margin-top: 30px;
+}
+
+.logo-navbar {
+    width: 50px;
+}
+
+.banner-index{
+    background-image: linear-gradient(rgba(37, 37, 37, 0.822), rgba(255, 255, 255, 0.7)), url('../img/foto-equipo.jpg');
+    padding: 15px;
+    background-position: center center;
+    height: 960px;
+}
+/*Redes sociales*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+/*Colocar en css responsive */
+
+.custom-form-group{
+    text-align: left!important;
+}
+
+.custom-file-input{
+    background-color: #fff;
+}
+
+.imagenes-actividades{
+    margin: auto;
+    padding-top: 30px;
+}
+
+.espaciado-filas{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.iconos{
+    width: 20px;
+}
+
+.iconos-md{
+    width: 30px;
+}

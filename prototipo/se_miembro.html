@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html  lang="es" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>Be ACACIG</title>
+        <meta name="description" content="BeBlack is short for beautiful black. A creative OnePager free to use. Created by www.lautenschlager.de">
+        <link rel="author" href="https://lautenschlager.de" />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/theme.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <header class="fade-in">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img alt="logo de la asociación de ciegos del Guayas." class="logo-navbar" src="img/logo_blanco.png"/></a>
+                <div id="skip-to-content"><a href="#main">Saltar al contenido</a></div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donaciones.html">Donaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="se_miembro.html">Sé miembro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section class="banner-miembros"></section>
+        <div class="container">
+            <div class="row">
+                <main id="main" tabindex="-1"> 
+                    <div class="col-md-12">
+                        <h1 class="titulos-primarios">Sé miembro</h2>
+                        <p>
+                            Forma parte de la Asociación como miembro con discapacidades visuales y participa en nuestros cursos, actividades y programas. O afíliate como socio voluntario para colaborar en la gestión de eventos, atención a miembros o para ayudar fisica o económicamente a quienes lo necesiten.
+                        </p>
+                    </div>
+
+                    <form method="POST" action="" onsubmit="submitForm()">
+                        <div class="row margin-bottom-small mt-4 center-xs">
+                            <div class="col-sm-6 padding-small">
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro mb-2">
+                                    <label for="tipo_miembro">Tipo <span class="text-danger">*</span></label>
+                                    <div class="form-check ml-4" style="margin-left: 20px;">
+                                        <input class="form-check-input" type="radio" name="radio_tipo" id="id_radio_miembro" value="campo-miembro" aria-label="Miembro con discapacidad visual" onchange="cambiarTipoMiembro(this)" checked>
+                                        <label class="form-check-label" for="id_radio_miembro">
+                                            Miembro con discapacidad visual
+                                        </label>
+                                    </div>
+                                    <div class="form-check" style="margin-left: 20px;">
+                                        <input class="form-check-input" type="radio" name="radio_tipo" id="id_radio_voluntario" value="campo-voluntario" aria-label="Socio Voluntario" onchange="cambiarTipoMiembro(this)">
+                                        <label class="form-check-label" for="id_radio_voluntario">
+                                            Socio Voluntario
+                                        </label>
+                                    </div>
+                                </div>  
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro">
+                                    <label for="nombre">Nombres <span class="text-danger">*</span></label>
+                                    <input type="text" name="nombre" class="margin-bottom-small" maxlength="100" placeholder="Nombres y Apellidos" required="" id="id_nombre" aria-label="Ingrese sus nombres y apellidos">
+                                </div>
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro">
+                                    <label for="direccion">Dirección de domicilio<span class="text-danger"></span></label>
+                                    <input type="text" name="direccion" class="margin-bottom-small" maxlength="200" placeholder="Dirección..." id="id_direccion" aria-label="Ingrese su dirección de domicilio">
+                                </div> 
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro">
+                                    <label for="email">Correo <span class="text-danger">*</span></label>
+                                    <input type="email" name="email" class="margin-bottom-small" maxlength="100" placeholder="Correo" required="" id="id_email" aria-label="Ingrese su correo electrónico">
+                                </div>    
+                                <div class="row"> 
+                                    <div class="form-group custom-form-group campo-voluntario campo-miembro col-sm-6">
+                                        <label for="telefono">Teléfono <span class="text-danger"></span></label>
+                                        <input type="number" name="telefono" class="margin-bottom-small" maxlength="20" placeholder="Teléfono" id="id_telefono" aria-label="Ingrese su número telefónico">
+                                    </div>  
+                                    <div class="form-group custom-form-group campo-voluntario campo-miembro col-sm-6">
+                                        <label for="edad">Edad <span class="text-danger"></span></label>
+                                        <input type="number" name="edad" class="margin-bottom-small" maxlength="100" placeholder="Edad" required="" id="id_edad" aria-label="Ingrese su edad en números">
+                                    </div>  
+                                </div>  
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro">
+                                    <label for="formulario">Formulario de inscripción <span class="text-danger">*</span></label>
+                                    <em class="fa fa-info-circle p-0" data-toggle="tooltip" data-placement="top" title="Cargue su formulario brindado por la Asociación escaneado como pdf"></em> 
+                                    <div class="custom-file">
+                                        <input type="file" name="formulario" class="margin-bottom-small custom-file-input" id="id_formulario" aria-label="Cargue su formulario brindado por la Asociación escaneado como pdf">
+                                    </div>
+                                </div>   
+                                <div class="form-group custom-form-group campo-voluntario campo-miembro">
+                                    <label for="cedula">Cédula de Ciudadanía <span class="text-danger">*</span></label>
+                                    <em class="fa fa-info-circle p-0" data-toggle="tooltip" data-placement="top" title="Cargue su cédula escaneada como pdf"></em> 
+                                    <div class="custom-file">
+                                        <input type="file" name="cedula" class="margin-bottom-small custom-file-input" id="id_cedula" aria-label="Cargue su cédula escaneada como pdf">
+                                    </div>
+                                </div>  
+                                <div class="form-group custom-form-group campo-miembro">
+                                    <label for="carnet">Carnet de Discapacidad <span class="text-danger">*</span></label>
+                                    <em class="fa fa-info-circle p-0" data-toggle="tooltip" data-placement="top" title="Cargue su carnet de discapacidad escaneado como pdf"></em> 
+                                    <div class="custom-file">
+                                        <input type="file" name="carnet" class="margin-bottom-small custom-file-input" id="id_carnet" aria-label="Cargue su carnet de discapacidad escaneado como pdf">
+                                    </div>
+                                </div>  
+
+                                <input type="submit" value="Enviar" class="bg-dark-blue" aria-label="Enviar Formulario ">
+                            </div>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="img/facebook.png" alt="icono de facebook" class="iconos-md text-left"> Síguenos en nuestra página oficial
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="subtitulos">ACACIG</h3>
+                        <ul class="links">
+                            <li><a href="index.html" title="inicio" target="_blank">Inicio</a></li>
+                            <li><a href="nosotros.html" title="Nosotros" target="_blank">Nosotros</a></li>
+                        <li><a href="actividades.html" title="Actividades" target="_blank">Actividades</a></li>
+                        <li><a href="donaciones.html" title="donaciones" target="_blank">Donaciones</a></li>
+                        <li><a href="contacto.html" title="se miembro" target="_blank">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li class="info"><img src="img/ubicacion.png" alt="icono de ubicación" class="iconos"> Lizardo García 831 y Alcedo esquina</li>
+                            <li class="info"><img src="img/telefono.png" alt="icono de teléfono" class="iconos"> 0999674622</li>
+                            <li class="info"><img src="img/correo-electronico.png" alt="icono de correo" class="iconos"> acacig.77@gmail.com</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/LOGO-removebg-preview.png" alt="icono de ACACIG" style="width: 100px;">
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
