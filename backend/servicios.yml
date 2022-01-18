@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  microservicio-actividad:
+    image: pruebadocker_activity
+    networks: - website
+
+  microservicio-contacto:
+    image: pruebadocker_contact
+    networks:
+      - website
+
+  microservicio-formulario:
+    image: pruebadocker_form
+    networks:
+      - website
+
+  microservicio-noticias:
+    image: pruebadocker_news
+    networks:
+      - website
+
+  nginx-service:
+    image: pruebadocker_nginx-proxy
+    networks:
+      - website
+
+networks:
+        website:

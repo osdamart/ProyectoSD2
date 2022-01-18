@@ -1,0 +1,50 @@
+version: '3'
+services:
+
+  activity:
+    build:
+      dockerfile: Dockerfile
+      context: ./activity 
+    container_name: activities
+    ports:
+      - "3001:3001"
+    restart: always
+
+  contact:
+    build:
+      dockerfile: Dockerfile
+      context: ./contact
+    container_name: contact
+    ports:
+      - "3002:3002"
+    restart: always
+
+  form:
+    build:
+      dockerfile: Dockerfile
+      context: ./form
+    container_name: form
+    ports:
+      - "3003:3003"
+    restart: always
+
+  news:
+    build:
+      dockerfile: Dockerfile
+      context: ./news
+    container_name: news
+    ports:
+      - "3004:3004"
+
+  nginx-proxy:
+    build:
+      dockerfile: Dockerfile
+      context: ./proxy
+    depends_on:
+        - activity
+        - news
+        - form
+        - contact
+    ports:
+      - "80:80"
+
